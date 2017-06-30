@@ -1,0 +1,28 @@
+@import "../../mixins";
+@import "../../_react-md/react-md";
+
+.bids-header {
+  padding: 15px 20px;
+  margin: 0;
+  background: $md-primary-color;
+  color: white;
+}
+
+.tab__wrapper {
+  text-align: center;
+  @media #{$md-mobile-media} {
+    padding: 0;
+  }
+  @media #{$md-tablet-media} {
+    padding: 50px;
+  }
+}
+
+.tabs__header {
+  padding: 70px 15px 20px;
+  white-space: inherit;
+}
+
+.tabs__show-offers-btn {
+  margin-bottom: 70px;
+}

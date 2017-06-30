@@ -1,0 +1,4 @@
+todo ==> NavigationPanel:
+
+1) make user avatar about 48px or even 56px with tricky name generation...
+2) make sign out functionality

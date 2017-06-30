@@ -1,0 +1,49 @@
+@import "../../mixins";
+@import "../../_react-md/react-md";
+
+#offers-popup {
+  overflow: auto;
+  h2 {
+    background: $md-primary-color;
+    color     : white;
+  }
+  @media #{$md-mobile-media} {
+    width: 75%;
+  }
+  @media #{$md-tablet-media} {
+    width: 60%;
+  }
+}
+
+.verification-text {
+  background: $md-blue-50;
+  border    : 1px solid $md-blue-200;
+
+  h1 {
+    padding: 20px 15px 15px;
+    margin : 0;
+  }
+
+  h4 {
+    padding    : 0 15px 20px;
+    margin     : 0;
+    white-space: inherit;
+  }
+}
+
+.account-verification__btns {
+  text-align: right;
+  margin    : 20px;
+}
+
+.verification-addresses-autocomplete {
+  max-height: 170px;
+}
+
+.verification-date-picker {
+  top: -310px;
+}
+
+.verification-cancel-btn {
+  margin-right: 10px;
+}

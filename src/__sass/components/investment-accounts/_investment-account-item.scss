@@ -1,0 +1,68 @@
+@import "../../mixins";
+@import "../../_react-md/react-md";
+
+.investment-account__list {
+  display        : flex;
+  flex-direction : row;
+  list-style     : none;
+  justify-content: space-between;
+}
+
+.investment-account__header {
+  text-align: right;
+  padding   : 15px;
+  background: $md-grey-200;
+}
+
+.investment-account__row-text {
+  padding-top: 10px;
+  background : $md-grey-200;
+  display    : flex;
+  @media #{$md-mobile-media} {
+    flex-direction : column;
+    justify-content: center;
+  }
+  @media #{$md-tablet-media} {
+    flex-direction : row;
+    justify-content: space-between;
+  }
+}
+
+.investment-account__list {
+  margin         : 0;
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+  @media #{$md-mobile-media} {
+    flex-direction: column;
+    min-width     : 200px;
+    padding       : 0;
+  }
+  @media #{$md-tablet-media} {
+    width         : 50%;
+    flex-direction: row;
+    padding-left  : 20px;
+  }
+  @media #{$md-desktop-media} {
+    justify-content: space-between;
+    width          : 30%;
+    min-width      : 300px;
+  }
+}
+
+.investment-account__text {
+  font-weight: bold;
+  color      : $md-grey-500;
+}
+
+.text-BPAY {
+  padding-right: 100px;
+  font-weight  : bold;
+  color        : $md-grey-500;
+  @media #{$md-mobile-media} {
+    padding: 0;
+  }
+  @media #{$md-tablet-media} {
+    padding-right: 100px;
+  }
+}

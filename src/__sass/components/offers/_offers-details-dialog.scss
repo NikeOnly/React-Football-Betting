@@ -1,0 +1,81 @@
+@import "../../mixins";
+@import "../../_react-md/react-md";
+
+#view-more {
+  overflow: auto;
+  @media #{$md-mobile-media} {
+    width: 75%;
+  }
+  @media #{$md-tablet-media} {
+    width: 60%;
+  }
+}
+
+.view-more__toolbar {
+  margin-bottom: 30px;
+  h2 {
+    margin     : 16px;
+    white-space: inherit;
+  }
+  @media #{$md-mobile-media} {
+    height: auto;
+  }
+}
+
+.view-more__header {
+  padding        : 0 15px;
+  display        : flex;
+  height         : $status-bar-height;
+  justify-content: space-between;
+  align-items    : center;
+  background     : $md-grey-200;
+}
+
+.view-more__paper {
+  @media #{$md-mobile-media} {
+    margin: 0 15px
+  }
+  @media #{$md-tablet-media} {
+    margin: 0 60px;    
+  }
+  @media #{$md-desktop-media} {
+    margin: 0 100px;
+  }
+}
+
+.view-more__title {
+  color : black;
+  margin: 15px;
+}
+
+.view-more__subtitle {
+  color : $md-grey-500;
+  margin: 0 15px 15px;
+}
+
+.view-more-file-input-column {
+  display       : flex;
+  flex-direction: column;
+  padding       : 0 15px;
+}
+
+.view-more__link {
+  padding       : 10px 0 0;
+  display       : flex;
+  flex-direction: row;
+  font-size     : 15px;
+
+  i {
+    color: inherit;
+  }
+}
+
+.view-more_text {
+  margin : 0;
+  padding: 15px;
+}
+
+.view-more__bid-btn {
+  text-align: right;
+  padding   : 20px;
+}

@@ -1,0 +1,81 @@
+@import "../../mixins";
+@import "../../_react-md/react-md";
+$status-bar-height: 32px;
+$offer-primary-column-width: 60%;
+
+.offer-item-card {
+  position: relative;
+}
+
+.offer-item-card__title {
+  * {
+    color: white;
+  }
+  background : $md-primary-color;
+  padding-top: $status-bar-height + 16px;
+}
+
+.offer-item-card__actions {
+  justify-content: space-between;
+  padding        : 8px 16px 16px;
+}
+
+.offer-item-card__actions__btn {
+  min-width: 95px;
+}
+
+.card-status-bar {
+  @include position(absolute, 0, 0, "", 0);
+  height    : $status-bar-height;
+  background: $md-grey-200;
+}
+
+.card-offer-content-block {
+  padding: 0;
+}
+
+.card-offer-item-row {
+  display    : flex;
+  align-items: center;
+  padding    : 16px;
+}
+
+.offer-item-column {
+  &.primary {
+    flex-basis: $offer-primary-column-width;
+  }
+
+  &.secondary {
+    flex-basis: 100% - $offer-primary-column-width;
+  }
+}
+
+.offer-list__title {
+  display: block;
+  color  : $md-grey-500;
+}
+
+.offer-list__description {
+  display    : block;
+  font-size  : 18px;
+  font-weight: bold;
+}
+
+.reload-fixed {
+  position: absolute;
+  z-index : 25;
+  top     : calc(100vh - 135px);
+  right   : 75px;
+}
+
+.no-offers {
+  display        : flex;
+  flex-direction : row;
+  align-items    : center;
+  height         : calc(100vh - 64px);
+  justify-content: center;
+  p {
+    font-size: 24px;
+    margin: 0;
+  }
+}

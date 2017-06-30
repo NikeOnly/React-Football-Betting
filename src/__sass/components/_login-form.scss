@@ -1,0 +1,52 @@
+@import "../_react-md/react-md";
+
+.login-form {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.login-form_or-text-divider {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+.login-form_sn-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -5px;
+}
+
+.login-form_sn-btn-wrapper {
+  flex: 1 1 185px;
+  margin: 10px 5px 0;
+  &.facebook {
+    @include react-md-theme-buttons($md-indigo-500, $md-green-700, $md-light-theme);
+    @include react-md-theme-colors($md-indigo-500, $md-green-700, $md-light-theme, $md-media-included, $md-primary-hover-opacity, $md-primary-background-text-color, $md-secondary-hover-opacity, $md-secondary-background-text-color);
+  }
+  &.google {
+    @include react-md-theme-buttons($md-red-700, $md-green-700, $md-light-theme);
+    @include react-md-theme-colors($md-red-700, $md-green-700, $md-light-theme, $md-media-included, $md-primary-hover-opacity, $md-primary-background-text-color, $md-secondary-hover-opacity, $md-secondary-background-text-color);
+  }
+}
+
+.login-form_sn-btn {
+  text-transform: none;
+  width: 100%;
+  outline: none;
+  text-align: left;
+}
+
+.login-form_sn-icon {
+  display: inline-block;
+  width: 24px;
+  vertical-align: middle;
+  &.facebook {
+    margin: -4px 0 0 -12px;
+  }
+  &.google {
+    margin: -4px 0 0 -8px;
+  }
+}

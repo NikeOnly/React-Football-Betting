@@ -1,0 +1,6 @@
+@import "../_react-md/react-md";
+
+.linear-progress-primary {
+  @include react-md-progress($md-primary-color);
+  height: 4px;
+}

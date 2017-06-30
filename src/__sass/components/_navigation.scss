@@ -1,0 +1,75 @@
+@import "../_react-md/react-md";
+@import "../mixins";
+
+.navigation__drawer > header {
+  align-items: center;
+
+  > h2 {
+    margin: 0 0 0 25px;
+  }
+}
+
+.navigation__toolbar {
+  display    : flex;
+  align-items: center;
+  background : white;
+  color      : $md-grey-900;
+  @media #{$md-desktop-media} {
+    z-index: 20 !important;
+  }
+}
+
+.navigation__toolbar-title {
+  margin: 0 0 0 12px !important;
+  @media #{$md-desktop-media} {
+    margin-left: 20px !important;
+  }
+}
+
+.navigation__subheader {
+  display    : flex;
+  align-items: center;
+  color      : $md-secondary-color;
+  font-weight: 600;
+  background : $md-grey-200;
+
+  &.dashboard-subheader:before {
+    @include material-icon("\E871");
+    padding-right: 32px;
+  }
+
+  &.settings-subheader:before {
+    @include material-icon("\E8B8");
+    padding-right: 32px;
+  }
+}
+
+.material-icons.navigation__actions-btn__icon {
+  border       : 1px solid $md-secondary-color;
+  color        : $md-secondary-color;
+  border-radius: 50%;
+  padding      : 5px;
+  margin       : -6px 0 0 -6px;
+}
+
+.md-list.navigation__actions-list {
+  margin       : 52px 8px 0 0;
+  border-radius: 5px;
+  @media #{$md-mobile-media} {
+    margin-top: 42px;
+  }
+  @media #{$md-tablet-media} {
+    margin-top: 52px;
+  }
+}
+
+.navigation__content-section {
+  position: relative;
+}
+
+.navigation__sign-out-btn.navigation__sign-out-btn_white {
+  width : calc(100% - 40px);
+  height: auto;
+  margin: 10px 20px;
+  color : white;
+}

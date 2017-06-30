@@ -1,0 +1,10 @@
+@import 'react-md';
+
+$md-primary-color: $md-green-500;
+
+$md-secondary-color: $md-deep-purple-600;
+
+
+@include react-md-everything;
+
+@include react-md-theme-progress($md-primary-color, $md-linear-progress-swatch, $md-progress-include-linear, $md-linear-progress-fallback-color);

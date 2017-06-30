@@ -1,0 +1,7 @@
+todo ==> What is left for Login Page:
+1. Show error for invalid authorization +
+2. Show error for not success sign up +
+3. Show something on success sign up (make autologin?...) +
+4. Show message about success sending the email with restoring the password... +
+5. Provide redux actions for login / sign up / sn auth +
+6. Provide another padding & margin for SN icons with desktop resolution....

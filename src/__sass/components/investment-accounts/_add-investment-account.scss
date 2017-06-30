@@ -1,0 +1,130 @@
+@import "../../mixins";
+@import "../../_react-md/react-md";
+$less-transparent-black: rgba(0, 0, 0, 0.6);
+$more-transparent-black: rgba(0, 0, 0, 0.3);
+$border-transparent-white: 1px solid rgba(255,255,255,0.5);
+$diameter-of-radiobutton: 25px;
+
+#offers-add-popup {
+  overflow: auto;
+  @media #{$md-mobile-media} {
+    width: 80%;
+  }
+  @media #{$md-desktop-media} {
+    width: 70%;
+  }
+}
+
+#offers-add-popupTitle {
+  margin    : 0;
+  background: $md-primary-color;
+  color     : white;
+}
+
+.add-investment-account__radio-box {
+  padding   : 0 24px 24px;
+  display   : flex;
+  background: $md-primary-color;
+  @media #{$md-mobile-media} {
+    flex-direction: column;
+  }
+  @media #{$md-tablet-media} {
+    flex-direction: row;
+  }
+}
+
+.add-investment-account__radio-box .add-investment-account__radios {
+  @include position(relative, "", "", "", "");
+  display       : flex;
+  flex-direction: row;
+  @media #{$md-mobile-media} {
+    padding-bottom: 30px;
+  }
+  @media #{$md-tablet-media} {
+    padding-bottom: 0;
+  }
+}
+
+.add-investment-account__radios .add-investment-account__radio_unchecked {
+  @include radiobuttons-circle($more-transparent-black, white, $diameter-of-radiobutton);
+}
+
+.add-investment-account__radios .add-investment-account__radio_checked {
+  @include radiobuttons-circle(white, $less-transparent-black, $diameter-of-radiobutton);
+}
+
+.add-investment-account__radio-box div {
+  height : 25px;
+  padding: 0;
+  cursor : default;
+}
+
+.add-investment-account__radio-box div[role="radio"] {
+  height: $diameter-of-radiobutton;
+  width : $diameter-of-radiobutton;
+  cursor: default;
+}
+
+.add-investment-account__radio_second {
+  @include position(absolute, 0, 0, 0, 0);
+}
+
+.add-investment-account__label {
+  padding    : 0 10px;
+  color      : white;
+  line-height: 25px;
+  cursor     : default;
+}
+
+.add-investment-account__radios .add-investment-account__line {
+  height       : 13px;
+  margin-right : 10px;
+  border-bottom: $border-transparent-white;
+  @media #{$md-mobile-media} {
+    display: none;
+  }
+  @media #{$md-tablet-media} {
+    display: block;
+    width  : 20px;
+  }
+  @media #{$md-desktop-media} {
+    width: 50px;
+  }
+}
+/* Add Account Popup Content */
+.add-account-step {
+  padding: 24px 20px 0;
+
+  h2 {
+    margin: 0 8px;
+    width : 100%;
+  }
+
+  h4 {
+    margin: 0 8px 8px;
+    width : 100%;
+    color : $md-grey-500;
+  }
+}
+
+.step1__text-field {
+  padding-bottom: 24px;
+}
+
+.add-account__btn-section {
+  text-align: right;
+  padding   : 24px;
+}
+
+.add-account__btn-cancel {
+  margin-right: 10px;
+}
+
+.step1__text-field_BSB {
+  width: 15%;
+}
+
+.add-investment-account-addresses-autocomplete {
+  max-height: 120px;
+  top: 60px;
+}

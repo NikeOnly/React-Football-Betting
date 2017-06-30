@@ -1,0 +1,16 @@
+{
+  "name": "simple-mock-for-api",
+  "version": "0.1.0",
+  "description": "core",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "1.14.1",
+    "connect-pause": "^0.1.0",
+    "core-js": "0.9.6",
+    "express": "4.13.3",
+    "object-assign": "4.0.1",
+    "qs": "5.2.0"
+  }
+}
